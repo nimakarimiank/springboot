@@ -1,6 +1,6 @@
-package illutech.com.database.entities;
+package illutech.com.database.dao.entities;
 import jakarta.persistence.*;
-import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

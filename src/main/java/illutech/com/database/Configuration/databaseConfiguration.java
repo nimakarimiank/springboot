@@ -1,11 +1,10 @@
 package illutech.com.database.Configuration;
 
 
-import illutech.com.database.entities.Department;
-import illutech.com.database.entities.Employee;
-import illutech.com.database.entities.Project;
-import illutech.com.database.entities.Users;
-import jakarta.annotation.sql.DataSourceDefinition;
+import illutech.com.database.dao.entities.Department;
+import illutech.com.database.dao.entities.Employee;
+import illutech.com.database.dao.entities.Project;
+import illutech.com.database.dao.entities.Users;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;

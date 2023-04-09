@@ -1,4 +1,4 @@
-package illutech.com.database.entities.subentities;
+package illutech.com.database.dao.entities.subentities;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.EnumType;
@@ -20,11 +20,11 @@ public class Contact {
     @Enumerated(EnumType.STRING)
     private contactType contactType;
 
-    public illutech.com.database.entities.subentities.contactType getContactType() {
+    public illutech.com.database.dao.entities.subentities.contactType getContactType() {
         return contactType;
     }
 
-    public void setContactType(illutech.com.database.entities.subentities.contactType contactType) {
+    public void setContactType(illutech.com.database.dao.entities.subentities.contactType contactType) {
         this.contactType = contactType;
     }
 

@@ -1,22 +1,21 @@
-package illutech.com.database.entities;
-
-
+package illutech.com.database.dao.entities;
 import illutech.com.database.Configuration.databaseConfiguration;
-import illutech.com.database.entities.subentities.Contact;
-import illutech.com.database.entities.subentities.Gender;
+import illutech.com.database.dao.entities.subentities.Contact;
+import illutech.com.database.dao.entities.subentities.Gender;
 import jakarta.persistence.*;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import org.hibernate.Session;
-
 import java.util.List;
 import java.util.Optional;
 
 @Entity(name = "Employee")
 public class Employee {
     @ManyToOne(targetEntity = Department.class)
+    @JoinColumn(nullable = true)
     private Department department;
     @Embedded
+    @JoinColumn(nullable = true)
     private Contact contact;
     @Id
     @Column(name = "id")
@@ -32,7 +31,8 @@ public class Employee {
     private String lastName;
     @Column(name = "email_address")
     private String emailAddress;
-    @Column(name = "gender")
+    @Column(name = "gender",nullable = true)
+
     @Enumerated(EnumType.STRING)
     private Gender gender;
     //empty constructor

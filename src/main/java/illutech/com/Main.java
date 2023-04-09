@@ -7,8 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}) //TODO Remember to add datasource to the classpath
+@SpringBootApplication //TODO Remember to add datasource to the classpath
 @PropertySource("classpath:Application.properties")
 public class Main {
     public static void main(String[] args)

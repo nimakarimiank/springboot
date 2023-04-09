@@ -1,4 +1,4 @@
-package illutech.com.database.entities;
+package illutech.com.database.dao.entities;
 
 
 import jakarta.persistence.*;
